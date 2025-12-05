@@ -17,6 +17,6 @@
 ## 📦 Installation
 
 ```bash
-git clone [https://github.com/bekir58/PySubEnum.git](https://github.com/bekir58/PySubEnum.git)
+git clone https://github.com/bekir58/PySubEnum.git
 cd PySubEnum
 pip install -r requirements.txt
