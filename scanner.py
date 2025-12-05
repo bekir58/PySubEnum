@@ -92,7 +92,6 @@ def scan_target(subdomain, scan_ports_flag):
 
     # HTTP TITLE CHECK
     try:
-        # Timeout 3 saniye, Verify False (SSL hatalarini yoksay)
         url = f"https://{subdomain}"
         try:
             r = requests.get(url, timeout=3, allow_redirects=True, verify=False)
@@ -103,7 +102,7 @@ def scan_target(subdomain, scan_ports_flag):
         # Title Regex
         if r.status_code:
             match = re.search(r'<title>(.*?)</title>', r.text, re.IGNORECASE | re.DOTALL)
-            title = match.group(1).strip()[:50] if match else "No Title" # Max 50 karakter al
+            title = match.group(1).strip()[:50] if match else "No Title"
             result["http_info"] = f"[{r.status_code}] {title}"
     except:
         result["http_info"] = "" 
