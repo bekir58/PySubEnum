@@ -1,5 +1,5 @@
 
-# ⚡ PySubEnum v3.0
+# ⚡ PySubEnum v1.0
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
 ![Status](https://img.shields.io/badge/Status-Maintained-orange?style=for-the-badge)
@@ -17,6 +17,7 @@
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/bekir58/PySubEnum.git
+git clone https://github.com/bellamy58/PySubEnum.git
 cd PySubEnum
+
 pip install -r requirements.txt
